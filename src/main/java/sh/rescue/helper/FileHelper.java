@@ -21,7 +21,7 @@ public class FileHelper {
                     .filter(File::isFile)
                     .forEach(file -> files.add(file.getAbsolutePath()));
         } catch (Exception e) {
-            System.out.println("getFiles error "+ e.getMessage());
+            System.out.println("没找到文件");
         }
 
         return files;

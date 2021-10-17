@@ -68,7 +68,7 @@ public class Application {
         List<FileInfo> list = new ArrayList<>();
 
         List<String> files = FileHelper.getFiles(src);
-        if (files == null || files.isEmpty()) {
+        if (files.isEmpty()) {
             return;
         }
 
