@@ -21,7 +21,7 @@ public class KoaliiHelper {
     public static SignResponse sign(byte[] data) {
         Map<String, String> map = new HashMap<>();
         map.put("b64OriginData", Base64.getEncoder().encodeToString(data));
-        map.put("certAlias", "sm2");
+        map.put("certAlias", "MZ_SM2");
         String json = JsonHelper.toStr(map);
 
         byte[] bytes = HttpHelper.post(hostPre + "/api/svs/bss/signMessageDetach", json);
